@@ -21,10 +21,12 @@ function TodosWrapper() {
 
   const deleteTodo = (id: string) => {
     // Code ...
+    return true
   };
 
   const toggleComplete = (id: string) => {
     // Code ...
+    return true
   };
 
   return (
@@ -39,6 +41,9 @@ function TodosWrapper() {
       {todos.map((todo) => (
         <Todo
         key={todo.id}
+        todo={todo}
+        deleteTodo={deleteTodo}
+        toggleComplete={toggleComplete}
         />
       ))}
     </div>

@@ -1,11 +1,18 @@
+import { Todo as TodoType } from "./Todos.types"
 
-function Todo() {
+type TodoProps ={
+  todo:TodoType
+  deleteTodo:(id:string)=>boolean
+  toggleComplete:(id:string)=>boolean
+}
+
+function Todo({todo,deleteTodo,toggleComplete}:TodoProps) {
   return (
     <div className="Todo">
     <p
-      className={ "" } // or completed className
+      className={ `${todo.completed ? "completed" : ""}` } // or completed className
     >
-      test todo
+      {todo.title}
     </p>
     <div>
     </div>

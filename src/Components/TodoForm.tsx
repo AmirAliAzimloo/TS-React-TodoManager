@@ -9,8 +9,11 @@ function TodoForm({ addTodo }: TodoFormProps) {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if(value){
-      addTodo(value)
+    if(value.trim()){
+      addTodo(value.trim())
+      setValue("")
+    }else{
+      alert("wrong value")
       setValue("")
     }
   };
