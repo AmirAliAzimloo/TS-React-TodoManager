@@ -1,15 +1,11 @@
 import './App.css'
-import Test from './Test'
+import TodosWrapper from './Components/TodosWrapper'
 
 function App() {
 
   return (
     <>
-    <Test/>
-    <br />
-     <h1>
-      Hello World 💚😉
-     </h1>
+    <TodosWrapper />
     </>
   )
 }
