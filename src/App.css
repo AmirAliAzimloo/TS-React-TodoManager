@@ -1,0 +1,11 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font: 3.5rem ;
+  
+  background: rgb(3, 43, 20);
+  overflow: hidden;
+  color: aliceblue;
+}
