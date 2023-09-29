@@ -40,7 +40,7 @@ function TodosWrapper() {
   };
 
   const toggleComplete = (id: string) => {
-    // Code ...
+    setTodos(todos.map(todo=>todo.id == id ? {...todo,completed : !todo.completed } : todo))
     return true
   };
 
