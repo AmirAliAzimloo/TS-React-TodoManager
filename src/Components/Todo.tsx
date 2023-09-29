@@ -3,7 +3,7 @@ function Todo() {
   return (
     <div className="Todo">
     <p
-      className={ "completed" } // or completed className
+      className={ "" } // or completed className
     >
       test todo
     </p>
