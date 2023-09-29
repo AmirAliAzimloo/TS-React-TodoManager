@@ -20,7 +20,7 @@ function TodosWrapper() {
   };
 
   const deleteTodo = (id: string) => {
-    // Code ...
+    setTodos(todos.filter(todo=>todo.id !== id))    
     return true
   };
 

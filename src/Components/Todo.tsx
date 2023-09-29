@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Todo as TodoType } from "./Todos.types"
+import { faTrash } from "@fortawesome/free-solid-svg-icons"
 
 type TodoProps ={
   todo:TodoType
@@ -15,6 +17,7 @@ function Todo({todo,deleteTodo,toggleComplete}:TodoProps) {
       {todo.title}
     </p>
     <div>
+    <FontAwesomeIcon onClick={()=>deleteTodo(todo.id)} icon={faTrash} />
     </div>
     </div>
   )
