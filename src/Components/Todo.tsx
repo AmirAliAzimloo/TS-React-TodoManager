@@ -4,7 +4,7 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons"
 
 type TodoProps ={
   todo:TodoType
-  deleteTodo:(id:string)=>boolean
+  deleteTodo:(id:string)=>void
   toggleComplete:(id:string)=>boolean
 }
 

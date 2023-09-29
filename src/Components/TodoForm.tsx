@@ -1,4 +1,5 @@
 import { useState } from "react";
+import swal from "sweetalert";
 
 type TodoFormProps = {
   addTodo: (title: string) => boolean;
@@ -13,7 +14,10 @@ function TodoForm({ addTodo }: TodoFormProps) {
       addTodo(value.trim())
       setValue("")
     }else{
-      alert("wrong value")
+      swal({
+        title:"wrong value",
+        icon:"error",
+    })
       setValue("")
     }
   };
